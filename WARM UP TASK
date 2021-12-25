@@ -1,0 +1,112 @@
+1) Write a function called “addFive”.
+Given a number, “addFive” returns 5 added to that number.
+
+function addfive(a){
+    
+    let num1 = a+5
+    let num2 =a 
+    let num3 = a-5
+    
+    return console.log(num1,num2,num3)
+}
+
+let result = addfive(5)
+
+3) Fill in your code that takes an number minutes and converts it to seconds. 
+
+var min = 5;
+function toSeconds(min) {
+    return console.log(min*60) 
+}
+var secs = toSeconds(min)
+
+4)Create a function that takes a string and returns it as an integer.
+
+var mystr = "5";
+function toInteger(mystr) {
+    return console.log(+mystr)
+}
+var myint = toInteger(mystr)
+
+5)Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+var myint = 0;
+function nextNumber(myint) {
+    return console.log(myint+1)
+}
+var myNextint = nextNumber(myint)
+
+
+6)Create a function that takes an array and returns the first element.
+
+var arr = [5, 2, 3];
+function getFirstElement(arr) {
+    return console.log(arr[0])
+}
+var data = getFirstElement(arr)
+
+7)Write a function that converts hours into seconds.
+
+var arr = 2
+function hourToSeconds(arr) {
+    return console.log(arr*3600)
+}
+var data = hourToSeconds(arr)
+
+8)Find the Perimeter of a Rectangle
+Create a function that takes height and width and finds the perimeter of a rectangle.
+
+function findPerimeter(num1,num2) {
+    
+    return console.log(2*(num1+num2))
+}
+var peri = findPerimeter(6,7)
+
+
+9)Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+function lessThan100(num1,num2) {
+   var sum = num1+num2
+     if(sum<100){
+       console.log("true")
+   }
+   else{
+       console.log("false")
+   }
+   
+   return
+    
+}
+var res = lessThan100(22,15)
+
+10)
+There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+function remainder(num1,num2) {
+    return console.log(num1%num2) 
+}
+var res = remainder(1,3)
+
+11)MacDonald is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+turkey = 2 legs
+horse = 4 legs
+pigs = 4 legs
+
+function CountAnimals(tur,horse,pigs) {
+    let animal1 = tur*2 
+    let animal2 = horse*4
+    let animal3 = pigs*4
+    console.log(animal1+animal2+animal3)
+    return
+}
+var legs = CountAnimals(2,3,5)
+
+12)
+Frames Per Second
+Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+function frames(num1,num2) {
+    var persec = num2*60
+    return console.log(persec*num1)
+}
+var fps = frames(1,2)
