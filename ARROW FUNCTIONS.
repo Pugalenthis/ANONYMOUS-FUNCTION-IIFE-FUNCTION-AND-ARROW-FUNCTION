@@ -1,47 +1,47 @@
 1)PRINT ODD NUMBERS IN ARRAY;
 
 ARROW FUNCTION
-let func =(a)=>{
+let func = (a) => {
     let arr = []
-            for(i=0;i<=a;i++){
-                  if(i%2!==0){
-                     arr.push(i)
-                          }
-                          }
-                                                                                                                                                 return arr
-                       }
-                                                                                                                                                                                                                                                      console.log(func(20))
+    for (i = 0; i <= a; i++) {
+        if (i % 2 !== 0) {
+            arr.push(i)
+        }
+    }
+    return arr
+}
+console.log(func(20))
 
-2) CONVERT STRING INTO TITLE CAPS IN AN ARRAY   
+2) CONVERT STRING INTO TITLE CAPS IN AN ARRAY
 
 // Convert all the strings to title caps in a string array
 
-let name="saranya"
-let arr=[];
+let name = "saranya"
+let arr = [];
 
-var toTitleCase =(str)=>{
-  return str.replace(/\w\S*/g,
-        function(txt) {
-                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-                                    }
-                                                      );
-                                                                        }
-                                                                                          var hello =(arr.push(toTitleCase(name)))
-                                                                                                            console.log(arr)
+var toTitleCase = (str) => {
+    return str.replace(/\w\S*/g,
+        function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
+}
+var hello = (arr.push(toTitleCase(name)))
+console.log(arr)
 
 3) SUM OF ALL NUMBERS IN AN ARRAY;
 
 ARROW FUNCTION;
 
-var arr= [1,2,3,4]
-var total =0
-var myfunc=(a)=>{
-  for (var i= 0;i<arr.length;i++) {
-      total += arr[i]
-            }
-                    return total
-                              }
-                                        console.log(myfunc(arr))
+var arr = [1, 2, 3, 4]
+var total = 0
+var myfunc = (a) => {
+    for (var i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
+    return total
+}
+console.log(myfunc(arr))
 
 4)RETURN ALL THE PALINDROMES IN AN ARRAY
 
@@ -49,17 +49,18 @@ var myfunc=(a)=>{
 USING ARROW FUNCTION;
 
 
-let array =["1221","hello","123321"]
-let arr =[];
+let array = ["1221", "hello", "123321"]
+let arr = [];
 let reverse = (str) => {
-       return str.split("").reverse().join("")
-         }
-           for(var i=0;i<array.length;i++) {
-             var reversedarray =reverse( array[i])
-                 if(array[i] ==reversedarray){
-                         arr.push(array[i])  }
-                                   }
-                                     console.log(arr)
+    return str.split("").reverse().join("")
+}
+for (var i = 0; i < array.length; i++) {
+    var reversedarray = reverse(array[i])
+    if (array[i] == reversedarray) {
+        arr.push(array[i])
+    }
+}
+console.log(arr)
 
 
 
@@ -70,9 +71,9 @@ Arrow function;
 var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 numArray = numArray.filter((number) => {
-  for (var i = 2; i <= Math.sqrt(number); i++) {
-      if (number % i === 0) return false;
-        }
-          return true;
-          });
+    for (var i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) return false;
+    }
+    return true;
+});
 console.log(numArray);
