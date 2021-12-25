@@ -1,49 +1,49 @@
 1)PRINT ODD NUMBERS IN ARRAY;
 
 ANONYMOUS FUNCTION
-var func = function(a) {
+var func = function (a) {
     let arr = []
-        for(i=0;i<=a;i++) {
-    if(i%2!==0){
-          arr.push(i)
-               }
-                }
-                return arr
-                  }
-               console.log(func(20))
+    for (i = 0; i <= a; i++) {
+        if (i % 2 !== 0) {
+            arr.push(i)
+        }
+    }
+    return arr
+}
+console.log(func(20))
 
 
 
 
 
 IIFE FUNCTION
-(function func(a) {
-    let arr = []
-        for(var i=0;i<=a;i++) {
-            if(i%2!==0){
-                    arr.push(i)
-                        }
-                            }
-             console.log(arr)
-                 })(20)
+    (function func(a) {
+        let arr = []
+        for (var i = 0; i <= a; i++) {
+            if (i % 2 !== 0) {
+                arr.push(i)
+            }
+        }
+        console.log(arr)
+    })(20)
 
 2) CONVERT STRING INTO TITLE CAPS IN AN ARRAY   
 ANONYMOUS FUNCTION
 
 // Convert all the strings to title caps in a string array
 
-let name="saranya"
-let arr=[];
+let name = "saranya"
+let arr = [];
 
 var toTitleCase = function (str) {
-  return str.replace(/\w\S*/g,
-      function(txt) {
+    return str.replace(/\w\S*/g,
+        function (txt) {
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-                }
-                  );
-                  }
-                  var hello =(arr.push(toTitleCase(name)))
-                  console.log(arr)
+        }
+    );
+}
+var hello = (arr.push(toTitleCase(name)))
+console.log(arr)
 ARROW FUNCTION
 
 
@@ -54,16 +54,16 @@ IIFE FUNCTION;
 
 // Convert all the strings to title caps in a string array
 
-let name="saranya"
-let arr=[];
+let name = "saranya"
+let arr = [];
 
 (function toTitleCase(str) {
-  return str.replace(/\w\S*/g,
-      function(txt) {
-            console.log( txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
-                }
-                  );
-                  })(name)
+    return str.replace(/\w\S*/g,
+        function (txt) {
+            console.log(txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+        }
+    );
+})(name)
 
 
 
@@ -71,44 +71,45 @@ let arr=[];
 3) SUM OF ALL NUMBERS IN AN ARRAY;
 ANONYMOUS FUNCTION;
 
-var arr= [1,2,3,4]
+var arr = [1, 2, 3, 4]
 var total = 0
-myfunc= function(a){
-  for (var i= 0;i<arr.length;i++) {
-    total += arr[i]
-      }
-        return total
-          }
-          console.log(myfunc(arr))
+myfunc = function (a) {
+    for (var i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
+    return total
+}
+console.log(myfunc(arr))
 
 
 IIFE FUNCTION;
 
-var arr =[1,2,3,4]
+var arr = [1, 2, 3, 4]
 var total = 0;
-(function myfunc(a){
-  for( var i=0;i<arr.length;i++) {
-      total += arr[i];
-        }
-          console.log(total)
-          })(arr);
+(function myfunc(a) {
+    for (var i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    console.log(total)
+})(arr);
 
 4)RETURN ALL THE PALINDROMES IN AN ARRAY
 
 USING ANONYMOUS FUNCTION
 
 
-let array =["1221","hello","123321"]
-let arr =[];
-let reverse =function (str){
-       return str.split("").reverse().join("")
-  }
-  for(var i=0;i<array.length;i++) {
-  var reversedarray =reverse( array[i])
-    if(array[i] ==reversedarray){
-        arr.push(array[i])  }
-          }
-  console.log(arr)
+let array = ["1221", "hello", "123321"]
+let arr = [];
+let reverse = function (str) {
+    return str.split("").reverse().join("")
+}
+for (var i = 0; i < array.length; i++) {
+    var reversedarray = reverse(array[i])
+    if (array[i] == reversedarray) {
+        arr.push(array[i])
+    }
+}
+console.log(arr)
 
 5) RETURN ALL PRIME NUMBERS IN ARRAY.
 
@@ -116,28 +117,28 @@ let reverse =function (str){
 Anonymous function;
 var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let hello = function(arr) {
+let hello = function (arr) {
 
-numArray = numArray.filter((number) => {
-  for (var i = 2; i <= Math.sqrt(number); i++) {
-        if (number % i === 0) return false;
-                }
-                          return true;
-                                    });
-                  return numArray
-                           }
-                  console.log(hello(numArray));
+    numArray = numArray.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+    });
+    return numArray
+}
+console.log(hello(numArray));
 
 IIFE FUNCTION;
 var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let myfunc= (function(arr){
-numArray = numArray.filter((number) => {
-  for (var i = 2; i <= Math.sqrt(number); i++) {
-          if (number % i === 0) return false;
-                          }
-                            return true;
-                                       });
-                   console.log(numArray);
-                                                                       })(numArray)
-                                                                       
+let myfunc = (function (arr) {
+    numArray = numArray.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+    });
+    console.log(numArray);
+})(numArray)
+
