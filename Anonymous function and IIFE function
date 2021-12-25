@@ -155,3 +155,49 @@ let myfunc = (function (arr) {
     console.log(numArray);
 })(numArray)
 
+6)Return median of two sorted arrays of same size
+
+ANONYMOUS FUNCTION;
+let arr1 =[1,2,3,4]
+let arr2 =[5,6,7,8]
+let arr3 =[...arr1,...arr2]
+
+
+ let myfunc = function(){
+    if(arr3.length%2===0){
+      return console.log((arr3[(arr3.length/2)-1]+arr3[(arr3.length/2)])/2)
+    }
+    else{
+      return  console.log(arr3[Math.round((arr3.length/2)-1)])
+    }
+}
+let result =(myfunc(arr3))
+
+7)Remove duplicates from an array
+ANONYMOUS FUNCTION;
+
+const arr =[1,2,3,4,5,1,2,3]
+
+
+let myfunc =function(arr){
+    return [ ...new Set(arr)]
+}
+
+console.log(myfunc(arr))
+
+8)Rotate an array by k times
+
+ANONYMOUS FUNCTION;
+
+let nums =[1,2,3,4,5]
+
+const rotateArray1 = function(nums, k) {
+
+  for (let i = 0; i < k; i++) {
+      nums.unshift(nums.pop());
+  }
+
+  return nums;
+}
+
+console.log(rotateArray1(nums,3))
